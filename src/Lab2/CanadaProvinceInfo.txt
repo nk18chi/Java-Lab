@@ -1,0 +1,54 @@
+{
+    "Canada" {
+        {
+            "province": "Ontario",
+            "capital": "Toronto",
+            "population": 14566547,
+        },
+        {
+            "province": "Quebec",
+            "capital": "Quebec City",
+            "population": 8484965,
+        },
+        {
+            "province": "British Columbia",
+            "capital": "Victoria",
+            "population": 5071336,
+        },
+        {
+            "province": "Alberta",
+            "capital": "Edmonton",
+            "population": 4371316,
+        },
+        {
+            "province": "Manitoba",
+            "capital": "Winnipeg",
+            "population": 1369465,
+        },
+        {
+            "province": "Saskatchewan",
+            "capital": "Regina",
+            "population": 1174462,
+        },
+        {
+            "province": "Nova Scotia",
+            "capital": "Halifax",
+            "population": 971395,
+        },
+        {
+            "province": "New Brunswick",
+            "capital": "Fredericton",
+            "population": 776827,
+        },
+        {
+            "province": "Newfoundland and Labrador",
+            "capital": "St. John's",
+            "population": 521542,
+        },
+        {
+            "province": "Prince Edward Island",
+            "capital": "Charlottetown",
+            "population": 156947,
+        }
+    }
+}
