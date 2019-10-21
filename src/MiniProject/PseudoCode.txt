@@ -1,0 +1,67 @@
+# Question
+	- Fields
+		・answer
+		・current
+		・input
+		・match
+
+	Constructor
+
+	Method
+		getCurrentResult
+		isAnswer
+
+# Input
+	Fields
+		・input
+		・inputHistory
+		・inputWrongHistory
+
+	Constructor
+	    inputLetter
+
+	Method
+		inputLetter
+		validLetter(by using set)
+		isHistoryList
+		addInputHistoryList
+		addInputWrongHistoryList
+　　
+# Game
+	- Fields
+		・answer         ex.)Vancouver
+		・currentResult  ex.)Va___u_er
+		・missingCount
+
+	- Constructor
+		getAnswerRandomly
+		printStartStatement
+		printNumberOfLettersByUnderscore
+
+	- Method
+		getAnswerRandomly (file import, if file not exist, error)
+		printNumberOfLettersByUnderscore
+		printStartStatement
+		printEndStatement(Success)
+		printEndStatement(Failure)
+
+# Driver
+	- Run
+		new Game object
+		while ([Game] count < 10)
+            new Input object
+            [Input] input Letter
+            [Input] valid Letter
+                if error or same letter input again, input Letter again
+                if ok, insert input list
+            new Question object
+            [Question] returnResult
+                if all match, break
+                if input letter not match, insert wrong list
+
+        if [Game] count < 10
+            printEndStatement(Success)
+        else
+		    printEndStatement(Failure)
+
+
