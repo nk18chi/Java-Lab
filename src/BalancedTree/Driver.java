@@ -1,7 +1,7 @@
-package PigLatin;
+package BalancedTree;
 
 public class Driver {
   public static void main(String[] args) {
-    GameController game = new GameController();
+    Tree t = new Tree();
   }
 }
