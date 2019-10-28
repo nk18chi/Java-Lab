@@ -45,7 +45,6 @@
 		printEndStatement(Success)
 		printEndStatement(Failure)
 
-# Driver
 	- Run
 		new Game object
 		while ([Game] count < 10)
