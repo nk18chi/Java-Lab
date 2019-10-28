@@ -48,19 +48,19 @@
 	- Run
 		new Game object
 		while ([Game] count < 10)
-            new Input object
-            [Input] input Letter
-            [Input] valid Letter
-                if error or same letter input again, input Letter again
-                if ok, insert input list
-            new Question object
-            [Question] returnResult
-                if all match, break
-                if input letter not match, insert wrong list
+			new Input object
+			[Input] input Letter
+			[Input] valid Letter
+				if error or same letter input again, input Letter again
+				if ok, insert input list
+			new Question object
+			[Question] returnResult
+				if all match, break
+				if input letter not match, insert wrong list
 
-        if [Game] count < 10
-            printEndStatement(Success)
-        else
-		    printEndStatement(Failure)
+		if [Game] count < 10
+			printEndStatement(Success)
+		else
+			printEndStatement(Failure)
 
 
