@@ -5,8 +5,26 @@ import java.util.ArrayList;
 public class Driver {
   public static void main(String[] args) {
 
+    // 1. Create an ArrayList<Piece> to include all types of pieces
+    ArrayList<Piece> pieces = new ArrayList<Piece>() {
+      {
+        add(new Pawn(true, false, null));
+        add(new Knight(true));
+        add(new Bishop(true));
+        add(new Rook(true));
+        add(new Queen(true));
+        add(new King(true));
+      }
+    };
+
+    for (Piece p :pieces) {
+      System.out.println(p);
+    }
+
+
+
     // 3. Create the following Pawns
-    Pawn[] pawnList = new Pawn[] {
+    Pawn[] pawns = new Pawn[] {
         new Pawn(true, true, "Queen"),
         new Pawn(true, false, null),
         new Pawn(false, false, null),
@@ -14,15 +32,11 @@ public class Driver {
         new Pawn(true, true, "Knight")
     };
 
-    for (Pawn p : pawnList) {
-      System.out.println(p.toString());
-    }
-
     // 4. Use equals() method to compare the following
-    System.out.println(pawnList[0].equals(pawnList[1])); // false
-    System.out.println(pawnList[0].equals(pawnList[3])); // false
-    System.out.println(pawnList[0].equals(pawnList[4])); // false
-    System.out.println(pawnList[1].equals(pawnList[2])); // false
-    System.out.println(pawnList[3].equals(pawnList[4])); // false
+    System.out.println(pawns[0].equals(pawns[1])); // false
+    System.out.println(pawns[0].equals(pawns[3])); // false
+    System.out.println(pawns[0].equals(pawns[4])); // false
+    System.out.println(pawns[1].equals(pawns[2])); // false
+    System.out.println(pawns[3].equals(pawns[4])); // false
   }
 }

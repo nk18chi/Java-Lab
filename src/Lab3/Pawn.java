@@ -33,21 +33,6 @@ public class Pawn extends Piece {
   }
 
   @Override
-  public int getValue() {
-    return value;
-  }
-
-  @Override
-  public void setValue(int value) {
-    this.value = value;
-  }
-
-  @Override
-  public boolean isWhite() {
-    return isWhite;
-  }
-
-  @Override
   public boolean equals(Object obj) {
     return value == ((Piece) obj).getValue() && isWhite == ((Piece) obj).isWhite
         && promoted == ((Pawn) obj).isPromoted() && newPiece == ((Pawn) obj).getNewPiece();
