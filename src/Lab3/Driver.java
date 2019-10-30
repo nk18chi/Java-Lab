@@ -17,11 +17,12 @@ public class Driver {
       }
     };
 
+    // 2. Using for-each loop, call move() method on each Piece to print the moves.
     for (Piece p :pieces) {
       System.out.println(p);
+      p.move();
+      System.out.println();
     }
-
-
 
     // 3. Create the following Pawns
     Pawn[] pawns = new Pawn[] {
