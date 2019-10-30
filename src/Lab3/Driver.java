@@ -9,6 +9,7 @@ public class Driver {
     ArrayList<Piece> pieces = new ArrayList<Piece>() {
       {
         add(new Pawn(true, false, null));
+        add(new Pawn(true, false, new Queen(true)));
         add(new Knight(true));
         add(new Bishop(true));
         add(new Rook(true));
@@ -26,11 +27,11 @@ public class Driver {
 
     // 3. Create the following Pawns
     Pawn[] pawns = new Pawn[] {
-        new Pawn(true, true, "Queen"),
+        new Pawn(true, true, new Queen(true)),
         new Pawn(true, false, null),
         new Pawn(false, false, null),
-        new Pawn(false, true, "Queen"),
-        new Pawn(true, true, "Knight")
+        new Pawn(false, true, new Queen(true)),
+        new Pawn(true, true, new Knight(true))
     };
 
     // 4. Use equals() method to compare the following

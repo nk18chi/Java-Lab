@@ -6,9 +6,9 @@ public class Pawn extends Piece {
   public static final String MOVE_MESSAGE = "Forward 1";
 
   boolean promoted;
-  String newPiece;
+  Piece newPiece;
 
-  public Pawn(boolean isWhite, boolean promoted, String newPiece) {
+  public Pawn(boolean isWhite, boolean promoted, Piece newPiece) {
     super(1, isWhite);
     this.promoted = promoted;
     this.newPiece = newPiece;
@@ -18,7 +18,7 @@ public class Pawn extends Piece {
     return promoted;
   }
 
-  public String getNewPiece() {
+  public Piece getNewPiece() {
     return newPiece;
   }
 
@@ -34,7 +34,13 @@ public class Pawn extends Piece {
 
   @Override
   public boolean equals(Object obj) {
-    return value == ((Piece) obj).getValue() && isWhite == ((Piece) obj).isWhite
-        && promoted == ((Pawn) obj).isPromoted() && newPiece == ((Pawn) obj).getNewPiece();
+    Pawn that = (Pawn) obj;
+    return super.equals(that) && promoted == that.isPromoted() && newPiece.equals(that.getNewPiece());
   }
+
+  @Override
+  public String toString() {
+    return String.format("%s {value=%s, isWhite=%s, newPiece='%s'}", getName(), getValue(), isWhite(), getNewPiece());
+  }
+
 }
