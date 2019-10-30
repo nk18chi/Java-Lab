@@ -22,6 +22,11 @@ public abstract class Piece {
 
   @Override
   public boolean equals(Object obj) {
+    System.out.println(value);
+    System.out.println(((Piece) obj).getValue());
+    System.out.println(isWhite);
+    System.out.println(((Piece) obj).isWhite);
+    System.out.println();
     return value == ((Piece) obj).getValue() && isWhite == ((Piece) obj).isWhite;
   }
 
