@@ -14,6 +14,14 @@ public class Pawn extends Piece {
     this.newPiece = newPiece;
   }
 
+  public boolean isPromoted() {
+    return promoted;
+  }
+
+  public String getNewPiece() {
+    return newPiece;
+  }
+
   @Override
   public void move() {
     System.out.println(MOVE_MESSAGE);
@@ -39,4 +47,9 @@ public class Pawn extends Piece {
     return isWhite;
   }
 
+  @Override
+  public boolean equals(Object obj) {
+    return value == ((Piece) obj).getValue() && isWhite == ((Piece) obj).isWhite
+        && promoted == ((Pawn) obj).isPromoted() && newPiece == ((Pawn) obj).getNewPiece();
+  }
 }

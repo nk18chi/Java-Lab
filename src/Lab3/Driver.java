@@ -24,8 +24,5 @@ public class Driver {
     System.out.println(pawnList[0].equals(pawnList[4])); // false
     System.out.println(pawnList[1].equals(pawnList[2])); // false
     System.out.println(pawnList[3].equals(pawnList[4])); // false
-
-
-
   }
 }
