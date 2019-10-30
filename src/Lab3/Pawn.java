@@ -5,8 +5,8 @@ public class Pawn extends Piece {
   public static final String NAME = "Pawn";
   public static final String MOVE_MESSAGE = "Forward 1";
 
-  boolean promoted;
-  Piece newPiece;
+  private boolean promoted;
+  private Piece newPiece;
 
   public Pawn(boolean isWhite, boolean promoted, Piece newPiece) {
     super(1, isWhite);

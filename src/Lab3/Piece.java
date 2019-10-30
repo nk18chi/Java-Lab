@@ -1,8 +1,9 @@
 package Lab3;
 
 public abstract class Piece {
-  int value;
-  boolean isWhite;
+
+  private int value;
+  private boolean isWhite;
 
   public Piece(int value, boolean isWhite) {
     this.value = value;
